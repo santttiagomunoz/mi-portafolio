@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="./src/style.css">
+
   <title>mi-perfil</title>
 </head>
 
@@ -48,35 +50,38 @@
     </section>
     
     
-
-    <h2>Mi horarios de estudios</h2>
-    <table>
-      <thead>
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-3">Mi horario de estudios</h2>
+      <table class="w-full text-left text-sm">
+      <thead class="bg-slate-100 text-slate-700">
         <tr>
-          <th scope="col">Dia</th>
-          <th scope="col">Tema</th>
-          <th scope="col">Horas</th>
+          <th scope="col" class="px-4 py-4 font-semibold">Dia</th>
+          <th scope="col" class="px-4 py-4 font-semibold">Tema</th>
+          <th scope="col" class="px-4 py-4 font-semibold">Horas</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Lunes</td>
-          <td>HTML</td>
-          <td>2</td>
+          <td class="px-4 py-4">Lunes</td>
+          <td class="px-4 py-4">HTML</td>
+          <td class="px-4 py-4">2</td>
         </tr>
         <tr>
-          <td>Miercoles</td>
-          <td>CSS</td>
-          <td>3</td>
+          <td class="px-4 py-4">Miercoles</td>
+          <td class="px-4 py-4">CSS</td>
+          <td class="px-4 py-4">3</td>
         </tr>
       </tbody>
     </table>
+    </section>
 
-    <h2>Contacto</h2>
-    <p>
-      <a href="https://github.com/santttiagomunoz">Mi GitHub</a>
-      <a href="mailto:santiagomunoz735@gmail.com">Escribeme</a>
-    </p>
+    <section class="mb-8">
+    <h2 class="text-xl font-bold mb-3">Contacto</h2>
+    <div class="flex flex-col sm:flex-row gap-3">
+      <a class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-700 transition-colors" href="https://github.com/santttiagomunoz">Mi GitHub</a>
+      <a class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-slate-300 text-slate-700 text-sm font-semibold hover:bg-slate-100 transition-colors" href="mailto:santiagomunoz735@gmail.com">Escribeme</a>
+    </div>    
+    </section>  
   </main>
 
 </body>
